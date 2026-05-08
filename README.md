@@ -26,6 +26,13 @@ pip install -r requirements.txt
 python test_search_add_to_cart.py
 
 
+
+## Execution Screenshot
+
+Execution screenshots are available in the screenshots folder.
+
+
+
 # Notes
 
 - No hardcoded sleeps used
