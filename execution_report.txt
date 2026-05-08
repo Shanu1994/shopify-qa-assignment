@@ -1,0 +1,28 @@
+Website opened successfully
+Password entered
+Submit button clicked
+Successfully entered store
+Total Product Links Found: 9
+
+Opening Product URL: https://adnabu-store-assignment1.myshopify.com/products/football-2023-panini-illusion-hobby-box
+Product page opened
+No variant option found
+Add To Cart not available for this product
+
+Opening Product URL: https://adnabu-store-assignment1.myshopify.com/products/2022-23-upper-deck-sp-authentic-hobby
+Product page opened
+No variant option found
+Add To Cart not available for this product
+
+Opening Product URL: https://adnabu-store-assignment1.myshopify.com/products/the-collection-snowboard-liquid
+Product page opened
+No variant option found
+Add To Cart clicked successfully
+Success screenshot saved
+
+===================================
+TEST PASSED
+Variant Selection + Add To Cart Successful
+===================================
+
+[Done] exited with code=0 in 98.841 seconds
