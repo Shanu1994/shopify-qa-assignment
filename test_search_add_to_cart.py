@@ -1,3 +1,5 @@
+import os
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -180,6 +182,23 @@ try:
     
     if product_added:
 
+    # ==========================================
+    # CREATE SCREENSHOT FOLDER
+    # ==========================================
+
+        if not os.path.exists("screenshots"):
+            os.makedirs("screenshots")
+
+    # ==========================================
+    # SAVE SUCCESS SCREENSHOT
+    # ==========================================
+
+        driver.save_screenshot(
+            "screenshots/test_passed.png"
+        )
+
+        print("Success screenshot saved")
+
         print("\n===================================")
         print("TEST PASSED")
         print("Variant Selection + Add To Cart Successful")
@@ -197,7 +216,16 @@ except Exception as e:
 
     traceback.print_exc()
 
-    driver.save_screenshot("failure_screenshot.png")
+    # ==========================================
+    # SAVE FAILURE SCREENSHOT
+    # ==========================================
+
+    if not os.path.exists("screenshots"):
+        os.makedirs("screenshots")
+
+    driver.save_screenshot(
+        "screenshots/failure_screenshot.png"
+    )
 
     print("Screenshot saved as failure_screenshot.png")
 
